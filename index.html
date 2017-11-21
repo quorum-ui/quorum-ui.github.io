@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Quorum</title>
+	<link rel="stylesheet" type="text/css" href="css/font-style.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.min.css?v=Rhs435Ty">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar">
+			<ul class="nav-holder">
+				<li class="active"><a href="#"><span class="icon-icon1"></span>Dashboard</a></li>
+				<li><a href="#"><span class="icon-icon2"></span>Analytics</a></li>
+				<li class="disabled"><a title="Coming Soon" href="#"><span class="icon-icon3"></span>Recovery</a></li>
+				<li><a href="#"><span class="icon-setting"></span>Setting</a></li>
+				<li><a href="#"><span class="icon-help"></span>Help</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="top-header">
+				<div class="logo-area">
+					<a href="#" class="logo"><img src="images/quorum-logo.svg" onerror="this.src='images/quorum-logo.png'" height="50" width="111" alt="Quorum"></a>
+				</div>
+				<div class="notification-area">
+					<ul class="notification-list">
+						<li><a class="toggle-list" href="#"><span class="icon-menu-dots"></span></a>
+							<div class="custom-overlay"></div>
+							<div class="dropdown-holder">
+								<div class="dropdown-list">
+									<div class="columns">
+										<div class="row">
+											<div class="col">
+												<h1>PN</h1>
+												<ul class="first-list">
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">NODE<br>UP</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="forth circle">
+																<span class="default-circle red-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">NODE<br>DOWN</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle yellow-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">BACKUP BEHIND<br>SCHEDULE</span>
+													</li>
+													<li>
+														<div class="state-circles disabled">
+															<a href="#" class="circle">
+																<span class="default-circle blue-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">N/A</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle gray-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">DISABLED</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<!-- <span class="default-circle"></span> -->
+															</a>
+														</div>
+														<span class="list-text">PN BACKING UP<br>(ANIMATING)</span>
+													</li>
+												</ul>
+											</div>
+											<div class="col">
+												<h1>HA/DR/DRM/OnQ</h1>
+												<ul class="first-list">
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">RN<br>READY</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle red-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">RN<br>ERROR</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle yellow-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">RN UPDATE<br>BEHIND SCHEDULE</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle blue-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">RN RUNNING<br>PROD/TEST</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<span class="default-circle gray-circle"></span>
+															</a>
+														</div>
+														<span class="list-text">DISABLED</span>
+													</li>
+													<li>
+														<div class="state-circles">
+															<a href="#" class="circle">
+																<!-- <span class="default-circle"></span> -->
+															</a>
+														</div>
+														<span class="list-text">RN UPDATING<br>(ANIMATING)</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#"><span class="icon-alert"></span></a><span class="notification">3</span></li>
+						<li><a href="#"><span class="icon-avatar"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-holder">
+				<div class="list-header">
+					<div class="list-style-view">
+						<a class="icon-list" href="#"></a>
+						<a class="icon-grid active" href="#"></a>
+					</div>
+					<div class="list-count">
+						<span class="red">10</span>
+						<span class="yellow">1</span>
+						<span class="green">364</span>
+					</div>
+					<div class="sub-nav">
+						<ul>
+							<li class="active"><a href="#">Nodes</a></li>
+							<li><a href="#">OnQs</a></li>
+							<li><a href="#">Testing</a></li>
+							<li><a href="#">Archive</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container-fluid main-content">
+					<div class="search-box">
+						<div class="box">
+							<span class="icon-search"></span>
+							<input type="search" id="mainSearch" placeholder="Text Filter">
+						</div>
+					</div>
+					<div class="state-area">
+						<ul class="state-list">
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle canvas-circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+										<span class="list-text">PN</span>
+									</a>
+									<a href="#" class="circle dashed canvas-circle"> 
+										<span class="default-circle"></span>
+										<span class="list-text">HA</span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+										<span class="list-text">DR</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle canvas-circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed"> 
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle yellow-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle gray-circle"></span>
+									</a>
+									<a href="#" class="circle dashed canvas-circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle canvas-circle"> 
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle canvas-circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed">
+										<span class="default-circle yellow-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed"> 
+										<span class="default-circle blue-circle"></span>
+										<span class="list-text">TEST</span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed"> 
+										<span class="default-circle blue-circle"></span>
+										<span class="list-text">PROD</span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle red-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle dashed canvas-circle"> 
+										<span class="default-circle"></span>
+										<span class="list-text">UPDATING</span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle"> 
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="state-header">
+									<h2 class="state-heading">R530-DR1-19-208</h2>
+									<a href="#" class="icon-menu-dots"></a>
+								</div>
+								<div class="state-circles">
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle"> 
+										<span class="default-circle"></span>
+									</a>
+									<a href="#" class="circle">
+										<span class="default-circle"></span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/circle-progress.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
